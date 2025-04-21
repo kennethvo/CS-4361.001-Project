@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class AITarget : MonoBehaviour
@@ -24,7 +25,7 @@ public class AITarget : MonoBehaviour
         distance = Vector3.Distance(agent.transform.position, Target.position);
         if(distance < attackDistance)
         {
-            agent.isStopped = true;
+            SceneManager.LoadScene("GameOver");
         }
         else
         {
