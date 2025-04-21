@@ -2709,7 +2709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.7
+      value: -51.3
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3661,7 +3661,6 @@ GameObject:
   - component: {fileID: 1196139442}
   - component: {fileID: 1196139447}
   - component: {fileID: 1196139448}
-  - component: {fileID: 1196139449}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -3821,18 +3820,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 1700446845}
   attackDistance: 2
---- !u!114 &1196139449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196139441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fba83df911a3e244f8aa0bd6bd3cbdaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1196792574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4406,7 +4393,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 2dd389115f6e0f34daa0b240b4dd5345, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: db637187091cef84ca9a63b3c0c015ae, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1372451417
 Transform:
