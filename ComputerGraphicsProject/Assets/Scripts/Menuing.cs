@@ -13,6 +13,11 @@ public class Menuing : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
     public void LoadGameOver()
     {
         SceneManager.LoadScene("GameOver");

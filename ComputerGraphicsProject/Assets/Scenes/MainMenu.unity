@@ -609,7 +609,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1461976561}
         m_TargetAssemblyTypeName: Menuing, Assembly-CSharp
-        m_MethodName: LoadMaze
+        m_MethodName: LoadHowToPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
