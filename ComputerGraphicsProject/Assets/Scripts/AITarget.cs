@@ -17,6 +17,7 @@ public class AITarget : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        Target = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
