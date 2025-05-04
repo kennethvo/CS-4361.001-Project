@@ -6,17 +6,18 @@ public class FlashlightScript : MonoBehaviour
 {
     Light light;
     float flashlightTimer = 0f;
-    float maxDuration = 20f;
+    public float maxDuration = 20f;
 
     void Start()
     {
         light = GetComponent<Light>();
+        light.enabled = true;
     }
 
     void Update()
     {
         // Toggle flashlight with F
-        if (Input.GetKeyUp(KeyCode.F))
+        /*if (Input.GetKeyUp(KeyCode.F))
         {
             // timer enabled when on
             if (!light.enabled && flashlightTimer < maxDuration)
@@ -27,7 +28,7 @@ public class FlashlightScript : MonoBehaviour
             {
                 light.enabled = false;
             }
-        }
+        }*/
 
         if (light.enabled)
         {
@@ -37,6 +38,15 @@ public class FlashlightScript : MonoBehaviour
             if (flashlightTimer >= maxDuration)
             {
                 light.enabled = false;
+            }
+        }
+        else
+        {
+            flashlightTimer -= Time.deltaTime;
+
+            if (flashlightTimer < 0)
+            {
+                light.enabled = true;
             }
         }
     }
